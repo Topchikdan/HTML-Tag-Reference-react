@@ -1,0 +1,22 @@
+// Шрифты проекта.
+// Локальные файлы (Neris, GT Eesti, Aquawax и т.д.) недоступны в этой среде,
+// поэтому базовая типографика подключена через Google Fonts —
+// это не меняет смысл оригинальных правил, просто гарантирует, что шрифты
+// действительно загрузятся при сборке и деплое.
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+// Если у вас есть исходные .ttf/.otf файлы шрифтов из дизайн-макета —
+// положите их в src/assets/Fonts/... и раскомментируйте нужные блоки ниже,
+// они переопределят веб-шрифты по тем же font-family именам.
+
+// @font-face {
+//     font-family: "Neris-SemiBold";
+//     src: url("../Fonts/neris/Neris-SemiBold.ttf") format("truetype");
+// }
+
+:root {
+  --font-display: 'Space Grotesk', 'Neris-SemiBold', sans-serif;
+  --font-body: 'Inter', 'gteestiprodisplay_regular', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Aquawax-Fx-Medium-trial', monospace;
+}
